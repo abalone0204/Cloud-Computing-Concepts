@@ -157,11 +157,12 @@ Output: 30
 > Welcome everyone
 > Hello everyone
 
-Word(Key)| Count(Value) 
+Key| Value 
 ---------| ------------ 
 Welcome | 1
+everyone | 1
 Hello | 1
-everyone | 2
+everyone | 1
 
 
 
