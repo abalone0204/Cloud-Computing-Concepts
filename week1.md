@@ -95,6 +95,84 @@ You shall answer these questions after week-1.
 
 ## Intro: Economics of clouds
 
+- Here's the question many people might ask: Clouds are money saver, aren't they?
+
+- But the real question is : Shall you own your cloud (private cloud) or just use public cloud?
+
+- Short-term  service: Use public cloud.
+
+- Long-term service: Own your private cloud.
+
+- Check the calculation in the course. It's not about computer science, it's more about cost.
+
+
+
+----
+
+## MapReduce Paradigm
+
+- Now we can having fun with mapreduce.
+
+- You will learn what it is and how it works.
+
+### Basic Level
+
+- What is MapReduce?
+
+- It's borrow from Functional Language(e.g., Lisp)
+
+- Map + Reduce
+
+- Map:
+
+```
+map square (1 2 3 4)
+
+Output  (1 4 9 16)
+```
+- Reduce(there is the tricky part):
+
+```
+reduce + (1 4 9 16)
+=> (+16(+9(+4 1)))
+Output: 30
+```
+
+- But you may wonder why we need map and reduce to handle this? Isn't the origin way nice enough? Check the example beside.
+
+> Functional programming's wiki
+> http://en.wikipedia.org/wiki/Functional_programming
+
+### Example: Word Count
+
+- How to find all ther word count of each word appear across entrie wiki?
+
+- Map:
+
+- Process individual records to generate intermediate key and value pairs. 
+
+- Here is our first example text set:
+
+
+> Welcome everyone
+> Hello everyone
+
+Word(Key)| Count(Value) 
+---------| ------------ 
+Welcome | 1
+Hello | 1
+everyone | 2
+
+
+
+
+
+
+
+
+
+
+
 
 
 
