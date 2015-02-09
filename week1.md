@@ -164,9 +164,49 @@ everyone | 1
 Hello | 1
 everyone | 1
 
+- `Map` can parallelly process individual records to generate intermediate key/value pairs.
+
+- We have duplicated `everyone` now, so we can apply the map task's result to `Reduce`, and get the record for per-key based below.
+
+Key| Value 
+---------| ------------ 
+Welcome | 1
+Hello | 1
+everyone | 2
+
+- If there is a little confusing, fee free to check ther course's video.
+
+- And if you're not so familiar how reduce and map works, proffessor provide a simple and clear example for us.
+
+----
+
+#### Question
+> A given Mapreduce program has the Map phase generate 100 key-value pairs with 10 unique keys. How many Reduce tasks can this program have when at least one Reduce task will certainly be assigned no keys when a hash partitioner is used (select all answers that are correct)?"
+
+- [ ]A.  3
+
+- [ ]B.  11
+
+- [ ]C. 50
+
+- [ ]D. 101
 
 
+#### Solution:
 
+The answers are B, C, D.
+
+Since the unique keys' number is 10. We must have at least 10 reduce task. And at least one reduce task has null key.
+
+So... there is a little bit stupid:
+
+- A: 3 < 11 -> Wrong!
+
+- B, C, D >=  11 -> Bingo!
+
+----
+
+### Hadoop
 
 
 
