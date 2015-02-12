@@ -109,7 +109,7 @@ You shall answer these questions after week-1.
 
 ----
 
-## MapReduce Paradigm
+## MapReduce Paradigm - First level
 
 - Now we can having fun with mapreduce.
 
@@ -206,12 +206,83 @@ So... there is a little bit stupid:
 
 ----
 
-### Hadoop
+### Hadoop 
+
+- You can check proffessor's demo codes during the course.
+
+(Including the map and reduce functions.)
+
+- I provide some refers about Hadoop for you!
+
+- See the official page: [http://hadoop.apache.org/](http://hadoop.apache.org/)
+
+
+----
+
+## MapReduce Paradigm - Examples
+
+- Just watch the video codes, 
+
+----
+
+## Mapreduce Scheduling
+
+- Map can be run parallelized easily, since each map task is independent from the other.
+
+- Reduce task should be run after all map task done, since the resuce task will run on each key once.That's call "barrier".
+
+- But it's not true all the time, if we can maintain the result of map task and run reduce task for the rest of all, the barrier would be solved.
+
+### Internal workings of MapReduce
+
+- Take YARN as example:
+
+- YARN(Yet Another Resource Negotiator)
+
+  - Treat each server as a collection of containers
+
+  - Has 3 main components:
+
+    1. Global Resource Manager(RM) -> Scheduling
+
+    2. Per-server Node Manager(NM) -> Daemon and server-specific functions
+
+    3. Per-application(job) Application Master(AM) -> Container negotiation with RM and NMs and detecting task failures of the job.
+
+(About 11:00, see the flow chart of "How a job gets a container" will help you a lot.)
+
+
+## MapReduce - Fault-tolerance
+
+- NM heartbeats to RM
+  
+  - If server fail, RM will let all affected AMs know, and AM takes action.
+
+- NM keeps tracks of each task running at its server
+
+- AM heartbeats to RM
+
+  - On failure, RM restarts AM, which then syncs up with running task
+
+- RM failure
+  
+  - Use old checkpoints and bring up secondary RM
+
+- Speculative execution:(Handling by AM) Copy the slowest task on another server, if it runs faster than the original one, kill the original one and get the result completed first. So, it's actually a **replicate execution**.
+
+- Locality:
 
 
 
+## Interview with Sumeet Singh(Senior Director of Big Data and Cloud Platform in Yahoo! Inc)
 
+- How do Yahoo! define cloud computing?
 
+  - It's first thinking about scale.(Billions of users).
+
+- Future will go more and more insteresting.
+
+- 
 
 
 
