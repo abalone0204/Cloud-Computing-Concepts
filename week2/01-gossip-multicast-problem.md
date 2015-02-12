@@ -49,9 +49,28 @@
         - Issues: ACKs and NAKs might implode. For instance if the multicast wasn't sent successfully at the initial.
 
         - SRM (Scalable Reliable Multicast): 
-            - Use NAKs but add random delays at the receiver. 
+            
+            - Use NAKs but add random but add delays at the receiver. 
 
             - If the receiver need to send NAKs multiple time it should use exponential backoff to avoid NAK storms
 
-        - RMTP (Reliable Multicast Transport Protocol)
+        - RMTP (Reliable Multicast Transport Protocol):
+
+             - Use ACKs 
+
+             - Only send to deignated receiver.
+
+- Conclustion:
+
+    - Both SRM and RMTP have the message implossion problem, so that's why we develop gossip based and epidemic based protocol.
+
     
+
+
+
+
+
+
+
+
+
