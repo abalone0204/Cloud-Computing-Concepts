@@ -1,4 +1,4 @@
-##1-8 Hadoop 
+## 1.8 Hadoop 
 
 - You can check proffessor's demo codes during the course.
 

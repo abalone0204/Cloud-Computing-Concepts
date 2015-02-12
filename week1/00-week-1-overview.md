@@ -1,4 +1,4 @@
-## 1-0 Weekly Overview
+## 1.0 Weekly Overview
 
 ## Key Phrases/Concepts
 

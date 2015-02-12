@@ -1,4 +1,4 @@
-##1-7 MapReduce Paradigm - First level
+## 1.7 MapReduce Paradigm - First level
 
 - Now we can having fun with mapreduce.
 

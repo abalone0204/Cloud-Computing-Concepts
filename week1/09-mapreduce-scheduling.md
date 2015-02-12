@@ -1,4 +1,4 @@
-##1-9 Mapreduce Scheduling
+## 1.9 Mapreduce Scheduling
 
 - Map can be run parallelized easily, since each map task is independent from the other.
 

@@ -1,4 +1,4 @@
-##1-6 Intro: Economics of clouds
+## 1.6 Intro: Economics of clouds
 
 - Here's the question many people might ask: Clouds are money saver, aren't they?
 

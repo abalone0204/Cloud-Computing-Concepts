@@ -1,5 +1,13 @@
 ##2-0 Weekly Overview
 
+## Key Phrases/Concepts
+
+- Clouds
+
+- MapReduce paradigm
+
+- Hadoop YARN
+
 ##Goals and Objectives
 
 - Know the key differences between cloud computing and previous generations of distributed systems.
@@ -8,13 +16,7 @@
 
 - Know how Hadoop schedules jobs.
 
-## Key Phrases/Concepts
 
-- Clouds
-
-- MapReduce paradigm
-
-- Hadoop YARN
 
 ## Guiding Questions
 

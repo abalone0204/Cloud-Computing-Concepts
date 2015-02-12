@@ -1,4 +1,4 @@
-## What is a cloud?
+## 1.2 What is a cloud?
 
 > Cloud = Lots of storage + compute cycles nearby
 

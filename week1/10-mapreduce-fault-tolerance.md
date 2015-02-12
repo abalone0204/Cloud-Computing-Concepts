@@ -1,4 +1,4 @@
-##1-10 MapReduce - Fault-tolerance
+## 1.10 MapReduce - Fault-tolerance
 
 - NM heartbeats to RM
   
