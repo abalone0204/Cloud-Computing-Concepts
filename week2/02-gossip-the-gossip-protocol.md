@@ -6,6 +6,6 @@
 
 - Push: Once you have message, start gossiping about it.
 
-- Pull: Periodically poll a few randomly selected processes for new multicast message you din't receive.
+- Pull: Periodically poll a few randomly selected processes for new multicast message which didn't receive.
 
 - Hybrid: Mix both.
