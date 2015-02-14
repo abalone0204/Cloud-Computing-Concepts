@@ -46,3 +46,4 @@
 - What happen to `P_mistake`, as `T_fail`, `T_cleanup` is increased?
 
 > False positive rate: Type I error.
+
