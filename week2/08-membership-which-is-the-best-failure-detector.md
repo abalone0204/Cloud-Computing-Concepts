@@ -1,4 +1,4 @@
-##2.7 Membership: Which is the best failure detector
+##2.8 Membership: Which is the best failure detector
 
 - Completeness -> Guarantee always
 
